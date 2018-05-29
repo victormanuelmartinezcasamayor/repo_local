@@ -34,19 +34,18 @@ function operaciones(op)
     var num1 = document.getElementById("num1").value;
     var num2 = document.getElementById("num2").value;
  
-    
-    //Comprobamos si se ha introducido números en las cajas
+    //Comprobamos si se ha introducido n?meros en las cajas
     if (isNaN(parseFloat(document.getElementById('num1').value))) {
-        alert("Indique un número en 'numero1'");
+        alert("Indique un n?mero en 'numero1'");
         document.getElementById("num1").innerText = "0";
         document.getElementById("num1").focus();
         } else if (isNaN(parseFloat(document.getElementById('num2').value))) {
-        alert("Indique un número en 'numero2'");
+        alert("Indique un n?mero en 'numero2'");
         document.getElementById("num2").innerText = "0";
         document.getElementById("num2").focus();
     }
     else {
-    //Si se han introducido los números en ámbas cajas, operamos:
+    //Si se han introducido los n?meros en ?mbas cajas, operamos:
         switch(op) {
             case 'sumar':
                 var resultado = ops.sumar(num1, num2);
@@ -75,11 +74,11 @@ function operaciones(op)
  
 <body>
  
-<h1>Script de Víctor Manuel Martínez Casamayor</h1>
+<h1>Script de Victor Manuel Martinez Casamayor</h1>
  
 <form>
-    Número 1: <input id="num1" type="number">
-    Número 2: <input id="num2" type="number">
+    N?mero 1: <input id="num1" type="number">
+    N?mero 2: <input id="num2" type="number">
     <br><br>
     <input type="button" value="SUMAR" onclick="operaciones(&#39;sumar&#39;); return false;"><br>
     <input type="button" value="RESTAR" onclick="operaciones(&#39;restar&#39;); return false;"><br>
